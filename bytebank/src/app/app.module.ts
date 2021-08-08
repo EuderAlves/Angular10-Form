@@ -7,12 +7,13 @@ import { FormsModule } from '@angular/forms';
 import { ExtratComponent } from './extrat/extrat.component';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 registerLocaleData(localePt, 'pt');
 
 @NgModule({
   declarations: [AppComponent, NovaTransfenciaComponent, ExtratComponent],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL' },
