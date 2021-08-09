@@ -8,7 +8,7 @@ import { NovaTransfenciaComponent } from './nova-transferencia/nova-transferenci
 export const routes: Routes = [
   { path: '', redirectTo: 'extrato', pathMatch: 'full' },
   { path: 'extrato', component: ExtratComponent },
-  { path: 'nova-transferncia', component: NovaTransfenciaComponent },
+  { path: 'nova-transferencia', component: NovaTransfenciaComponent },
 ];
 
 @NgModule({
